@@ -1,0 +1,58 @@
+@use "../utilities/mixins";
+@use "../utilities/variables.scss";
+@use "../utilities/colors.scss";
+
+
+
+.method_menu{
+    counter-reset: number;
+
+    & h2{
+        font-weight: 600;
+        font-size: 1.2rem;
+        margin: 2rem 1rem;
+    }
+    & ol{
+        padding: 1rem;
+        display: flex;
+        gap: 2rem;
+            @media (max-width: 980px) {
+                flex-direction: column;
+            }
+    }
+    & li{
+        position: relative;
+        background-color: colors.$light-grey;
+        padding: 1.5rem;
+        flex-grow: 1;
+        border-radius: 1.3rem;
+        font-weight: 500;
+        margin-left: 1rem;
+
+            @include mixins.shadow;
+    &:hover{
+            background-color:rgba(245,237,255,255);
+        }
+    & i.fas{
+        color: colors.$grey;
+        margin-right: 0.6rem;
+        font-size: 1.2rem;
+    }
+    &::before{
+        content:'' counter(number);
+        counter-increment: number;
+        background-color: colors.$purple;
+        width: variables.$size-method-menu * 2;
+        height: variables.$size-method-menu * 2;
+        display: flex;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        bottom: variables.$size-method-menu;
+        left: -1 * variables.$size-method-menu;
+        color: white;
+
+    }
+    }
+}

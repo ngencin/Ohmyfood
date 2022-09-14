@@ -1,0 +1,19 @@
+
+@use "../sass/layout/header.scss";
+@use "../sass/pages/localisation.scss";
+@use "../sass/pages/explorer.scss";
+@use "../sass/utilities/mixins";
+@use "../sass/pages/method-menu.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap');*,
+
+*
+::before,
+::after{
+  box-sizing: border-box;
+
+}
+
+body{
+  font-family: "Roboto",sans-serif;
+}

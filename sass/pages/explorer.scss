@@ -1,17 +1,16 @@
-@use "utiles";
+@use "../utilities/mixins";
+@use "../utilities/colors.scss";
 
 .explorer {
-    background-color: rgb(246, 246, 246);
+    background-color: colors.$light-grey;
     text-align: center;
     padding: 0 2.5rem 1.8rem 2.5rem;
       & h2{
-      font-family: "Roboto", sans-serif;
       padding: 1rem 0 1rem 0;
       font-weight: 700;
       font-size: 1rem;
       }
       & p{
-        font-family: "Roboto", sans-serif;
         font-size: 0.7rem;
         padding-bottom: 1rem;
         font-weight: 300;
@@ -19,17 +18,16 @@
       & a{
         padding: 0.4rem 0.6rem 0.4rem 0.6rem;
         color: #fff;
-        font-size: 0.5rem;
+        font-size: 0.7rem;
         border-radius: 2rem;
         background-image: linear-gradient(to right bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
         text-decoration: none;
         font-weight: 400;
-        font-family: "Roboto", sans-serif;
         cursor: default;
-          @include utiles.shadow;
+          @include mixins.shadow;
       }
       & a:hover{
-        @include utiles.hover-opacity;
+        @include mixins.hover-opacity;
       }
   }
   

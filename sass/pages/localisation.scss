@@ -1,3 +1,5 @@
+@use "../utilities/colors.scss";
+
 .localisation {
     display: flex;
     background-color: rgb(234, 234, 234);
@@ -5,10 +7,12 @@
     align-items: center;
     gap: 0.7rem;
     padding: 0.7rem;
-    font-family: "Roboto", sans-serif;
-    font-size: 0.6rem;
+    font-size: 0.7rem;
+    color: colors.$grey;
+
         
       & i{
         font-size: 0.7rem;
+        color: #000;
       }
     }
