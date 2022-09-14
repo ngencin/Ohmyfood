@@ -14,7 +14,7 @@ header h1 {
   font-size: 1.2rem;
 }
 
-main > .localisation {
+.localisation {
   display: flex;
   background-color: rgb(234, 234, 234);
   justify-content: center;
@@ -24,8 +24,7 @@ main > .localisation {
   font-family: "Roboto", sans-serif;
   font-size: 0.6rem;
 }
-
-main .localisation i {
+.localisation i {
   font-size: 0.7rem;
 }
 
@@ -34,21 +33,18 @@ main .localisation i {
   text-align: center;
   padding: 0 2.5rem 1.8rem 2.5rem;
 }
-
 .explorer h2 {
   font-family: "Roboto", sans-serif;
   padding: 1rem 0 1rem 0;
   font-weight: 700;
   font-size: 1rem;
 }
-
 .explorer p {
   font-family: "Roboto", sans-serif;
   font-size: 0.7rem;
   padding-bottom: 1rem;
   font-weight: 300;
 }
-
 .explorer a {
   padding: 0.4rem 0.6rem 0.4rem 0.6rem;
   color: #fff;
@@ -58,11 +54,40 @@ main .localisation i {
   text-decoration: none;
   font-weight: 400;
   font-family: "Roboto", sans-serif;
-  box-shadow: 0px 1px 3px grey;
   cursor: default;
+  box-shadow: 0px 1px 3px grey;
+}
+.explorer a:hover {
+  opacity: 0.7;
 }
 
-.explorer a:hover {
+.method_menu {
+  padding: 1rem;
+}
+.method_menu h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.method_menu ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+@media (max-width: 768px) {
+  .method_menu ol {
+    flex-direction: column;
+  }
+}
+.method_menu li {
+  background-color: rgb(246, 246, 246);
+  padding: 1.2rem;
+  border: 1px solid red;
+  flex-grow: 1;
+  border-radius: 1.3rem;
+  box-shadow: 0px 1px 3px grey;
+}
+.method_menu li:hover {
   opacity: 0.7;
 }
 
