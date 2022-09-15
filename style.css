@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap");
-header h1 {
+header .header_logo {
+  height: 2rem;
+  width: 100%;
+  padding: 2rem;
+  background-image: url("/assets/logo/ohmyfood@2x.svg");
+  background-repeat: no-repeat;
+  background-position: center;
   box-shadow: 0px 0.5px 1px grey;
-  font-family: "shrikhand", cursive;
-  padding: 0.5rem;
-  text-align: center;
-  position: relative;
-  font-size: 1.5rem;
 }
 
 .localisation {
@@ -107,6 +108,7 @@ header h1 {
 
 .restaurants {
   background-color: rgb(246, 246, 246);
+  padding: 0 0.8rem 4rem 0.8rem;
 }
 .restaurants h2 {
   font-weight: 600;
@@ -140,11 +142,68 @@ header h1 {
 .restaurants .restaurant_card {
   cursor: default;
 }
-.restaurants .restaurant_card_img {
+.restaurants .restaurant_card__img {
   border-radius: 2.5rem 2.5rem 0 0;
-  background-image: url(/assets/restaurants/menu_1.jpg);
   background-size: cover;
-  height: 18rem;
+  background-position: 35% 61%;
+  height: 12rem;
+}
+@media (min-width: 980px) {
+  .restaurants .restaurant_card__img {
+    height: 18rem;
+  }
+}
+.restaurants .restaurant_card__img-1 {
+  background-image: url(/assets/restaurants/menu_1.jpg);
+}
+.restaurants .restaurant_card__img-2 {
+  background-image: url(/assets/restaurants/menu_2.jpg);
+}
+.restaurants .restaurant_card__img-3 {
+  background-image: url(/assets/restaurants/menu_3.jpg);
+}
+.restaurants .restaurant_card__img-4 {
+  background-image: url(/assets/restaurants/menu_4.jpg);
+}
+.restaurants .restaurant_card_description {
+  position: relative;
+  background-color: #fff;
+  border-radius: 0 0 2.5rem 2.5rem;
+}
+.restaurants .restaurant_card_description h3 {
+  padding-top: 1.6rem;
+  margin-left: 1rem;
+}
+.restaurants .restaurant_card_description p {
+  margin-left: 1rem;
+  margin-top: 0.4rem;
+  font-weight: 300;
+  padding-bottom: 1rem;
+}
+.restaurants .restaurant_card_description i {
+  font-size: 1.8rem;
+  position: absolute;
+  right: 1rem;
+  top: 1.5rem;
+}
+
+footer .description_footer {
+  background-color: rgb(53, 53, 53);
+  padding: 0.8rem;
+  color: #fff;
+  width: 100%;
+  display: inline-block;
+}
+footer .description_footer h3 {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 1.3rem;
+  padding: 1rem 0;
+}
+footer .description_footer p {
+  padding: 0.2rem;
+}
+footer .description_footer i {
+  padding-right: 0.3rem;
 }
 
 *,
@@ -155,6 +214,11 @@ header h1 {
 
 body {
   font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 /*# sourceMappingURL=style.css.map */

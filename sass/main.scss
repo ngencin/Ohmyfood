@@ -5,6 +5,7 @@
 @use "../sass/utilities/mixins";
 @use "../sass/pages/method-menu.scss";
 @use "../sass/pages/menus.scss";
+@use "../sass/layout/footer.scss";
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap');*,
 
@@ -19,3 +20,7 @@ body{
   font-family: "Roboto",sans-serif;
 }
 
+a{
+  text-decoration: none;
+  color: inherit;
+}

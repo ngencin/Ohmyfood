@@ -3,12 +3,11 @@
 
     .restaurants{
         background-color: colors.$light-grey;
-
-    
-        & h2{
-            font-weight: 600;
-            padding: 2rem 1rem;
-        }
+        padding: 0 0.8rem 4rem 0.8rem;
+            & h2{
+                font-weight: 600;
+                padding: 2rem 1rem;
+            }
 
     .cards_restaurants{
         display: grid;
@@ -38,15 +37,48 @@
 
     .restaurant_card{
         cursor: default;
+
         
-        &_img{
+        &__img{
             border-radius: 2.5rem 2.5rem 0 0;
-            background-image: url(/assets/restaurants/menu_1.jpg);
             background-size: cover;
-            height: 18rem;
+            background-position: 35% 61%;
+            height: 12rem;
+            @media (min-width: variables.$breackpoint) {
+               height: 18rem;
+            }
             
         }
-    
+            @for $i from 1 through 4{
+                &__img-#{$i}{
+                    background-image: url(/assets/restaurants/menu_#{$i}.jpg);
+
+                }
+            }
+        &_description{
+            position: relative;
+            background-color: #fff;
+            border-radius: 0 0 2.5rem 2.5rem;
+                h3{
+                    padding-top: 1.6rem;
+                    margin-left: 1rem;
+                }
+                p{
+                   margin-left: 1rem;
+                   margin-top: 0.4rem;
+                   font-weight: 300;
+                   padding-bottom: 1rem;
+                }
+                i{
+                    font-size: 1.8rem;
+                    position: absolute;
+                    right: 1rem;
+                    top: 1.5rem;
+                }
+            
+        }
+
+       
     }
     
 }   
