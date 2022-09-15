@@ -1,5 +1,6 @@
 @use "../utilities/colors.scss";
 @use "../utilities/variables.scss";
+@use "../utilities/mixins.scss";
 
     .restaurants{
         background-color: colors.$light-grey;
@@ -75,6 +76,16 @@
                     right: 1rem;
                     top: 1.5rem;
                 }
+                .fa_solid{
+                    color: transparent;
+                    &:hover{
+                        @include mixins.linear-gradient;
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                    }
+                }
+                
+                
             
         }
 

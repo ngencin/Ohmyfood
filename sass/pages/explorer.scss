@@ -20,11 +20,11 @@
         color: #fff;
         font-size: 0.7rem;
         border-radius: 2rem;
-        background-image: linear-gradient(to right bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
         text-decoration: none;
         font-weight: 400;
         cursor: default;
           @include mixins.shadow;
+          @include mixins.linear-gradient;
       }
       & a:hover{
         @include mixins.hover-opacity;
