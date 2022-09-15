@@ -214,6 +214,10 @@ footer .description_footer i {
   padding-right: 0.3rem;
 }
 
+img {
+  max-width: 100%;
+}
+
 *,
 * ::before,
 ::after {
