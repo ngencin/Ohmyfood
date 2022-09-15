@@ -55,11 +55,11 @@ header h1 {
 
 .method_menu {
   counter-reset: number;
+  margin-bottom: 2.5rem;
 }
 .method_menu h2 {
   font-weight: 600;
-  font-size: 1.2rem;
-  margin: 2rem 1rem;
+  padding: 2rem 1rem;
 }
 .method_menu ol {
   padding: 1rem;
@@ -103,6 +103,48 @@ header h1 {
   bottom: 1rem;
   left: -1rem;
   color: white;
+}
+
+.restaurants {
+  background-color: rgb(246, 246, 246);
+}
+.restaurants h2 {
+  font-weight: 600;
+  padding: 2rem 1rem;
+}
+.restaurants .cards_restaurants {
+  display: grid;
+  gap: 2rem;
+}
+@media (min-width: 980px) {
+  .restaurants .cards_restaurants {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.restaurants .cards_restaurants .new {
+  position: relative;
+}
+.restaurants .cards_restaurants .new::before {
+  content: "Nouveau";
+  position: absolute;
+  height: 2.5rem;
+  width: 5rem;
+  background-color: #99E2D0;
+  color: #1b6150;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  top: 1rem;
+  right: 1rem;
+}
+.restaurants .restaurant_card {
+  cursor: default;
+}
+.restaurants .restaurant_card_img {
+  border-radius: 2.5rem 2.5rem 0 0;
+  background-image: url(/assets/restaurants/menu_1.jpg);
+  background-size: cover;
+  height: 18rem;
 }
 
 *,

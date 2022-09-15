@@ -6,11 +6,11 @@
 
 .method_menu{
     counter-reset: number;
+    margin-bottom: 2.5rem;
 
     & h2{
         font-weight: 600;
-        font-size: 1.2rem;
-        margin: 2rem 1rem;
+        padding: 2rem 1rem;
     }
     & ol{
         padding: 1rem;

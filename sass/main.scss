@@ -4,6 +4,7 @@
 @use "../sass/pages/explorer.scss";
 @use "../sass/utilities/mixins";
 @use "../sass/pages/method-menu.scss";
+@use "../sass/pages/menus.scss";
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap');*,
 
@@ -17,3 +18,4 @@
 body{
   font-family: "Roboto",sans-serif;
 }
+
