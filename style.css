@@ -216,26 +216,26 @@ footer .description_footer i {
 
 .img-banner img {
   width: 100%;
-  height: 60vh;
   object-fit: cover;
-  object-position: bottom;
 }
 
 .one-page {
-  display: flex;
   position: relative;
   width: 100%;
+  border-radius: 1.5rem 1.5rem 0 0;
+  background: rgb(246, 246, 246);
+  margin-top: -5rem;
+  padding: 1rem;
 }
 .one-page h1 {
   font-family: "Shrikhand", sans-serif;
-  padding: 1rem;
   font-size: 1.5rem;
 }
 .one-page i {
   font-size: 1.6rem;
   position: absolute;
   right: 1rem;
-  padding: 1rem;
+  top: 1rem;
 }
 .one-page .fa_solid {
   color: transparent;
@@ -244,6 +244,32 @@ footer .description_footer i {
   background-image: linear-gradient(to right bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
   background-clip: text;
   -webkit-background-clip: text;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background: rgb(246, 246, 246);
+}
+.menu__category {
+  background: rgb(246, 246, 246);
+  border: 1px solid red;
+  flex: auto;
+}
+.menu__category h3 {
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+.menu-submenu {
+  background: #fff;
+  margin: 1rem 0 1rem 0;
+}
+@media (min-width: 980px) {
+  .menu {
+    flex-direction: row;
+  }
 }
 
 *,
