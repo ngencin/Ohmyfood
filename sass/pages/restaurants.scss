@@ -27,13 +27,15 @@
 .menu{
     display: flex;
     flex-direction: column;
-    padding: 1rem;
     background: colors.$grey-menu;
+    margin-top: 2.5rem;
     
 &__category{
     background: colors.$grey-menu;
     position: relative;
+    margin-top: 2rem;
     @include mixins.title-restaurant-menu;
+
 
    
     
@@ -42,31 +44,55 @@
         background:#fff;
         margin: 1rem 0 1rem 0;
         display: flex;
-        height: 3rem;
+        height: 4.5rem;
         border-radius: 1rem;
-        padding: 0.5rem;
+        overflow: hidden;
         @include mixins.shadow;
 
         &__descritption{
             display: flex;
-flex-direction: column;
+            flex-direction: column;
+            padding: 1rem;
         }
         &__check_price{
             display: flex;
-            margin-left: auto;           
+            margin-left: auto; 
+            
+            &:hover {
+                margin-right: 4rem;
+                overflow: visible;
+                transition: all 1s;
+            }
         }
         p{
-            padding-top: 0.3rem;
+            padding-top: 0.7rem;
             font-weight: 300;
             font-size: 0.9rem;
         }
         &__price{
-            margin-top: 1.2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 0.7rem;
             font-weight: 500;
         }
         &__check{
+            $button-check: 4rem;
         background: colors.$tertiary;
-}
+        border-radius: 0 1rem 1rem 0;
+        margin-right: -$button-check;
+        width: $button-check;
+        display: grid;
+        place-items: center;
+        
+
+        
+        
+}i .menu-check {
+            
+        }
+
+
 }
 
 

@@ -249,12 +249,13 @@ footer .description_footer i {
 .menu {
   display: flex;
   flex-direction: column;
-  padding: 1rem;
   background: rgb(246, 246, 246);
+  margin-top: 2.5rem;
 }
 .menu__category {
   background: rgb(246, 246, 246);
   position: relative;
+  margin-top: 2rem;
 }
 .menu__category h3 {
   text-transform: uppercase;
@@ -265,30 +266,44 @@ footer .description_footer i {
   background: #fff;
   margin: 1rem 0 1rem 0;
   display: flex;
-  height: 3rem;
+  height: 4.5rem;
   border-radius: 1rem;
-  padding: 0.5rem;
+  overflow: hidden;
   box-shadow: 0px 1px 3px grey;
 }
 .menu-submenu__descritption {
   display: flex;
   flex-direction: column;
+  padding: 1rem;
 }
 .menu-submenu__check_price {
   display: flex;
   margin-left: auto;
 }
+.menu-submenu__check_price:hover {
+  margin-right: 4rem;
+  overflow: visible;
+  transition: all 1s;
+}
 .menu-submenu p {
-  padding-top: 0.3rem;
+  padding-top: 0.7rem;
   font-weight: 300;
   font-size: 0.9rem;
 }
 .menu-submenu__price {
-  margin-top: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0.7rem;
   font-weight: 500;
 }
 .menu-submenu__check {
   background: #99E2D0;
+  border-radius: 0 1rem 1rem 0;
+  margin-right: -4rem;
+  width: 4rem;
+  display: grid;
+  place-items: center;
 }
 @media (min-width: 980px) {
   .menu {
