@@ -1,3 +1,5 @@
+@use "../utilities/colors.scss";
+
 
 @mixin shadow { box-shadow: 0px 1px 3px grey;
 }
@@ -12,7 +14,7 @@
 
 @mixin pages-restaurants {
    
-    i{
+    .fa-heart{
         font-size: 1.6rem;
         position: absolute;
         right: 1rem;
@@ -34,5 +36,58 @@
         text-transform: uppercase;
         font-family: "Roboto", sans-serif;
         font-weight: 300;
+        position: relative;
+        margin-bottom: 2.5rem;
+    &::after{
+        content: "";
+        position: absolute;
+        height: 0.25rem;
+        width: 2.5rem;
+        background-color: colors.$tertiary;
+        top: 1.4rem;
+        left: 0;
     }
+    }
+}
+
+@mixin rotate-check{
+    @keyframes rotate-check { 
+        0%{
+            transform: rotate(-200deg);
+        }
+        100%{
+            transform: rotate(0);
+        }
+        
+    }
+}
+
+@mixin mask-text{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+}
+
+@mixin button-command{
+    padding: 0.4rem 0.6rem 0.4rem 0.6rem;
+        color: #fff;
+        font-size: 0.7rem;
+        border-radius: 2rem;
+        text-decoration: none;
+        font-weight: 400;
+        @include shadow;
+        @include linear-gradient;
+}
+
+@mixin chargement-menu {
+    @keyframes chargement-menu {
+        from {
+            opacity:0;
+        }
+        to {
+            opacity:1;
+        }
+        
+    }
+    
 }

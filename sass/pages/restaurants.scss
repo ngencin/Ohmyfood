@@ -3,6 +3,12 @@
 @use "../utilities/variables.scss";
 
 
+.arrow{
+    position: absolute;
+top: 1.5rem;
+margin-left: 0.8rem;
+}
+
 .img-banner img{
     width: 100%;
     object-fit: cover;
@@ -15,93 +21,103 @@
     background: colors.$grey-menu;
     margin-top: -5rem;
     padding: 1rem;
-    
-    h1{
-        font-family: "Shrikhand", sans-serif;  
-        font-size: 1.5rem;
-        
+         h1{
+            font-family: "Shrikhand", sans-serif;  
+            font-size: 1.5rem;
+        }
+        @include mixins.pages-restaurants;
+            
+        .menu{
+            display: flex;
+            flex-direction: column;
+            background: colors.$grey-menu;
+                &__category{
+                    background: colors.$grey-menu;
+                    position: relative;
+                    margin-top: 2rem;
+                    @include mixins.title-restaurant-menu;
+                } 
+                &-submenu{
+                    background:#fff;
+                    margin: 1rem 0 1rem 0;
+                    display: flex;
+                    border-radius: 1rem;
+                    cursor: pointer;
+                    @include mixins.chargement-menu;
+                    animation: chargement-menu 2s;
+                    @include mixins.mask-text;
+                        @include mixins.shadow;
+                        &__description{
+                            display: flex;
+                            flex-direction: column;
+                            padding: 1rem;
+                            @include mixins.mask-text;
+                                & p{
+                                    padding-top: 0.7rem;
+                                    font-weight: 300;
+                                    font-size: 0.9rem;
+                                }
+                        }
+                        &__check_price{
+                            display: flex;
+                            margin-left: auto; 
+                           
+                                    
+                        }
+                        &__price{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: flex-end;
+                            padding: 0.7rem;
+                            font-weight: 500;
+                        }
+                        &__check{
+                            $button-check: 4rem;
+                            background: colors.$tertiary;
+                            border-radius: 0 1rem 1rem 0;
+                            margin-right: -$button-check;
+                            width: $button-check;
+                            display: grid;
+                            place-items: center;
+                                .menu-check{
+                                display: grid;
+                                align-items: center;
+                                background: white;
+                                border-radius: 50%;
+                                width: 2rem;
+                                height: 2rem;
+                                text-align: center;
+                                color: colors.$tertiary;
+                               
+                            }
+                               
+                        } 
+                        &:hover  {
+                            .menu-submenu__check{
+                                margin-right: 0;
+                            transition: all 0.7s ease;
+                            }
+                           i{
+                            @include mixins.rotate-check;
+                            animation: rotate-check 0.5s ease-in-out;
+                           } 
+                        }
+                
+                }
+                .button-command{
+                    margin: 1rem 0 2rem 0;
+                    text-align: center;
+                        &__commander{
+                            @include mixins.button-command;
+                                &:hover{
+                                    @include mixins.hover-opacity;
+                                }
+                        }
+                }
+
+                @media (min-width: variables.$breackpoint) {
+                    flex-direction: row;
+        }
     }
-    @include mixins.pages-restaurants;
 }
 
-.menu{
-    display: flex;
-    flex-direction: column;
-    background: colors.$grey-menu;
-    margin-top: 2.5rem;
-    
-&__category{
-    background: colors.$grey-menu;
-    position: relative;
-    margin-top: 2rem;
-    @include mixins.title-restaurant-menu;
-
-
-   
-    
-} 
-&-submenu{
-        background:#fff;
-        margin: 1rem 0 1rem 0;
-        display: flex;
-        height: 4.5rem;
-        border-radius: 1rem;
-        overflow: hidden;
-        @include mixins.shadow;
-
-        &__descritption{
-            display: flex;
-            flex-direction: column;
-            padding: 1rem;
-        }
-        &__check_price{
-            display: flex;
-            margin-left: auto; 
-            
-            &:hover {
-                margin-right: 4rem;
-                overflow: visible;
-                transition: all 1s;
-            }
-        }
-        p{
-            padding-top: 0.7rem;
-            font-weight: 300;
-            font-size: 0.9rem;
-        }
-        &__price{
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            padding: 0.7rem;
-            font-weight: 500;
-        }
-        &__check{
-            $button-check: 4rem;
-        background: colors.$tertiary;
-        border-radius: 0 1rem 1rem 0;
-        margin-right: -$button-check;
-        width: $button-check;
-        display: grid;
-        place-items: center;
-        
-
-        
-        
-}i .menu-check {
-            
-        }
-
-
-}
-
-
-
-
-@media (min-width: variables.$breackpoint) {
-    flex-direction: row;
-}
-    
- 
-
-}
