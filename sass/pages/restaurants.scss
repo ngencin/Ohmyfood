@@ -32,31 +32,45 @@ margin-left: 0.8rem;
             flex-direction: column;
             background: colors.$grey-menu;
                 &__category{
+
+                    @for $i from 1 through 3{
+                        :nth-child(#{$i}){
+                            animation-delay: 100ms * $i;
+                        }
+                    }
                     background: colors.$grey-menu;
                     position: relative;
                     margin-top: 2rem;
                     @include mixins.title-restaurant-menu;
-                } 
-                &-submenu{
-                    background:#fff;
+                
+                .menu-submenu{
+                   background:#fff;
                     margin: 1rem 0 1rem 0;
                     display: flex;
                     border-radius: 1rem;
                     cursor: pointer;
                     @include mixins.chargement-menu;
-                    animation: chargement-menu 2s;
+                    animation: chargement-menu 1s;
                     @include mixins.mask-text;
                         @include mixins.shadow;
                         &__description{
                             display: flex;
                             flex-direction: column;
                             padding: 1rem;
+                            overflow: hidden;
+                            
+                        h4{
+                            padding-top: 0.7rem;
+                            font-size: 0.9rem;
                             @include mixins.mask-text;
-                                & p{
-                                    padding-top: 0.7rem;
-                                    font-weight: 300;
-                                    font-size: 0.9rem;
-                                }
+
+                        }
+                        p{
+                            font-weight: 300;
+                            padding-top: 0.7rem;
+                            font-size: 0.9rem;
+                            @include mixins.mask-text;
+                         }
                         }
                         &__check_price{
                             display: flex;
@@ -102,7 +116,7 @@ margin-left: 0.8rem;
                             animation: rotate-check 0.5s ease-in-out;
                            } 
                         }
-                
+                    }
                 }
                 .button-command{
                     margin: 1rem 0 2rem 0;

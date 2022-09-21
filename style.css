@@ -266,6 +266,15 @@ footer .description_footer i {
   position: relative;
   margin-top: 2rem;
 }
+.one-page .menu__category :nth-child(1) {
+  animation-delay: 100ms;
+}
+.one-page .menu__category :nth-child(2) {
+  animation-delay: 200ms;
+}
+.one-page .menu__category :nth-child(3) {
+  animation-delay: 300ms;
+}
 .one-page .menu__category h3 {
   text-transform: uppercase;
   font-family: "Roboto", sans-serif;
@@ -282,13 +291,13 @@ footer .description_footer i {
   top: 1.4rem;
   left: 0;
 }
-.one-page .menu-submenu {
+.one-page .menu__category .menu-submenu {
   background: #fff;
   margin: 1rem 0 1rem 0;
   display: flex;
   border-radius: 1rem;
   cursor: pointer;
-  animation: chargement-menu 2s;
+  animation: chargement-menu 1s;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -296,37 +305,47 @@ footer .description_footer i {
 }
 @keyframes chargement-menu {
   from {
+    transform: translateY(-50%);
     opacity: 0;
   }
   to {
+    transform: translateY(0);
     opacity: 1;
   }
 }
-.one-page .menu-submenu__description {
+.one-page .menu__category .menu-submenu__description {
   display: flex;
   flex-direction: column;
   padding: 1rem;
   overflow: hidden;
+}
+.one-page .menu__category .menu-submenu__description h4 {
+  padding-top: 0.7rem;
+  font-size: 0.9rem;
+  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.one-page .menu-submenu__description p {
-  padding-top: 0.7rem;
+.one-page .menu__category .menu-submenu__description p {
   font-weight: 300;
+  padding-top: 0.7rem;
   font-size: 0.9rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
-.one-page .menu-submenu__check_price {
+.one-page .menu__category .menu-submenu__check_price {
   display: flex;
   margin-left: auto;
 }
-.one-page .menu-submenu__price {
+.one-page .menu__category .menu-submenu__price {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   padding: 0.7rem;
   font-weight: 500;
 }
-.one-page .menu-submenu__check {
+.one-page .menu__category .menu-submenu__check {
   background: #99E2D0;
   border-radius: 0 1rem 1rem 0;
   margin-right: -4rem;
@@ -334,7 +353,7 @@ footer .description_footer i {
   display: grid;
   place-items: center;
 }
-.one-page .menu-submenu__check .menu-check {
+.one-page .menu__category .menu-submenu__check .menu-check {
   display: grid;
   align-items: center;
   background: white;
@@ -344,11 +363,11 @@ footer .description_footer i {
   text-align: center;
   color: #99E2D0;
 }
-.one-page .menu-submenu:hover .menu-submenu__check {
+.one-page .menu__category .menu-submenu:hover .menu-submenu__check {
   margin-right: 0;
   transition: all 0.7s ease;
 }
-.one-page .menu-submenu:hover i {
+.one-page .menu__category .menu-submenu:hover i {
   animation: rotate-check 0.5s ease-in-out;
 }
 @keyframes rotate-check {
