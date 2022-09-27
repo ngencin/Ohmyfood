@@ -83,6 +83,7 @@
                         @include mixins.linear-gradient;
                         background-clip: text;
                         -webkit-background-clip: text;
+                        cursor: pointer;
                     }
                 }
                 

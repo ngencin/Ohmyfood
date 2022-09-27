@@ -5,8 +5,12 @@
 
 .arrow{
     position: absolute;
-top: 1.5rem;
-margin-left: 0.8rem;
+    top: 0.8rem;
+    margin-left: 1rem;
+    color: colors.$dark-grey;
+        i:hover{
+            transform: scale(1.2);
+        }
 }
 
 .img-banner img{
@@ -23,7 +27,7 @@ margin-left: 0.8rem;
     padding: 1rem;
          h1{
             font-family: "Shrikhand", sans-serif;  
-            font-size: 1.5rem;
+            font-size: 1.3rem;
         }
         @include mixins.pages-restaurants;
             

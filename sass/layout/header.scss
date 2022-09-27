@@ -1,13 +1,11 @@
 header{
-  position: relative;
- .header_logo{
-    height: 2rem;
-    width: 100%;
-    padding: 2rem;
-    background-image: url('/assets/logo/ohmyfood@2x.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    box-shadow: 0px 0.5px 1px grey;
+  position: relative; 
+  .header_title{
+     text-align: center;
+    font-family: "shrikhand", sans-serif;
+    font-size: 1.5rem;
+    padding: 0.6rem;
+    box-shadow: 0px 1px 3px gray;
 
   }
 

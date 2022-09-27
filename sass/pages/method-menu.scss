@@ -23,11 +23,17 @@
     & li{
         position: relative;
         background-color: colors.$light-grey;
-        padding: 1.5rem;
+        padding: 1.2rem;
         flex-grow: 1;
         border-radius: 1.3rem;
         font-weight: 500;
         margin-left: 1rem;
+        flex-direction: row;
+        display: flex;
+            p{
+                font-size: 0.8rem;
+                padding-left: 1rem;
+            }
 
             @include mixins.shadow;
     &:hover{
@@ -35,23 +41,28 @@
         }
     & i.fas{
         color: colors.$grey;
-        margin-right: 0.6rem;
-        font-size: 1.2rem;
+        padding-left: 1rem;
+        font-size: 1rem;
+
+        &:hover{
+            color: colors.$purple;
+        }
     }
     &::before{
         content:'' counter(number);
         counter-increment: number;
         background-color: colors.$purple;
-        width: variables.$size-method-menu * 2;
-        height: variables.$size-method-menu * 2;
+        width: variables.$size-method-menu * 1.4;
+        height: variables.$size-method-menu * 1.4;
         display: flex;
         border-radius: 50%;
         align-items: center;
         justify-content: center;
         position: absolute;
         bottom: variables.$size-method-menu;
-        left: -1 * variables.$size-method-menu;
+        left: -0.8 * variables.$size-method-menu;
         color: white;
+        font-size: 0.7rem;
 
     }
     }

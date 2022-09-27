@@ -36,22 +36,34 @@ position: fixed;
 inset: 0;
 z-index: 1;
 opacity: 0.9;
-animation: loader-page 1s 4s forwards;
-transform-origin: top;
-
-
+animation: loader-page 2s 2s forwards;
+transform-origin: center;
+    p{
+      text-align: center;
+      margin-top: 10rem;
+      font-size: 2.5rem;
+      color: colors.$tertiary;
+    }
 }
 .progress{
-  width: 50%;
-  border: 10px solid #f4a261;
+  width: 10rem;
+  border: 10px solid colors.$dark-grey;
   border-radius: 15px;
+  position: relative;
+  animation: loader-page 2s 1.5s forwards;
+  margin: auto;
+  top: 15rem;
+ 
 }
 
+
 .progress .color{
-  background-color: colors.$secondary ;
+  @include mixins.linear-gradient;
   height: 10px;
   border-radius: 15px;
-  animation: progres 4s infinite linear;    
+  animation: progres 2s linear;   
+
+
 }
 @keyframes progres{
   0%{
@@ -72,13 +84,10 @@ transform-origin: top;
 };
 
 @keyframes loader-page {
-  from { 
-    transform: scale(1);
-  }
-  to { 
-    transform: scale(0);
-  }
-  
+  100% {
+    opacity: 0;
+    z-index: -10;
+}
 }
 
 
