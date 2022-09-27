@@ -89,17 +89,19 @@ header .header_title {
 .method_menu li p {
   font-size: 0.8rem;
   padding-left: 1rem;
+  align-items: center;
+  display: flex;
 }
 .method_menu li:hover {
   background-color: rgb(245, 237, 255);
+}
+.method_menu li:hover i.fas {
+  color: rgb(147, 86, 220);
 }
 .method_menu li i.fas {
   color: rgb(126, 126, 126);
   padding-left: 1rem;
   font-size: 1rem;
-}
-.method_menu li i.fas:hover {
-  color: rgb(147, 86, 220);
 }
 .method_menu li::before {
   content: "" counter(number);
@@ -135,25 +137,13 @@ header .header_title {
     grid-template-columns: 1fr 1fr;
   }
 }
-.restaurants .cards_restaurants_details i {
-  font-size: 1.8rem;
-  margin-top: -3.5rem;
-  position: absolute;
-  left: 16rem;
-}
-.restaurants .cards_restaurants_details .fa_solid {
-  color: transparent;
-}
-.restaurants .cards_restaurants_details .fa_solid:hover {
-  background-image: linear-gradient(to right bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
-  background-clip: text;
-  -webkit-background-clip: text;
+.restaurants .restaurant_card {
   cursor: pointer;
 }
-.restaurants .cards_restaurants_details .new {
+.restaurants .restaurant_card .new {
   position: relative;
 }
-.restaurants .cards_restaurants_details .new::before {
+.restaurants .restaurant_card .new::before {
   content: "Nouveau";
   position: absolute;
   height: 2.5rem;
@@ -165,9 +155,6 @@ header .header_title {
   place-items: center;
   top: 1rem;
   right: 1rem;
-}
-.restaurants .restaurant_card {
-  cursor: pointer;
 }
 .restaurants .restaurant_card__img {
   border-radius: 2.5rem 2.5rem 0 0;
@@ -206,6 +193,22 @@ header .header_title {
   margin-top: 0.4rem;
   font-weight: 300;
   padding-bottom: 1rem;
+}
+.restaurants .restaurant_card_description i {
+  font-size: 1.5rem;
+  top: 1rem;
+  position: absolute;
+  right: 1rem;
+  padding-top: 1rem;
+}
+.restaurants .restaurant_card_description .fa_solid {
+  color: transparent;
+}
+.restaurants .restaurant_card_description .fa_solid:hover {
+  background-image: linear-gradient(to right bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  cursor: pointer;
 }
 
 footer .description_footer {
@@ -277,6 +280,14 @@ footer .description_footer a {
   display: flex;
   flex-direction: column;
   background: rgb(246, 246, 246);
+}
+@media (min-width: 820px) {
+  .one-page .menu {
+    flex-direction: row;
+    gap: 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 .one-page .menu__category {
   background: rgb(246, 246, 246);
@@ -411,11 +422,6 @@ footer .description_footer a {
 }
 .one-page .menu .button-command__commander:hover {
   opacity: 0.7;
-}
-@media (min-width: 820px) {
-  .one-page .menu {
-    flex-direction: row;
-  }
 }
 
 *,

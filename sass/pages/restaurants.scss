@@ -35,6 +35,13 @@
             display: flex;
             flex-direction: column;
             background: colors.$grey-menu;
+            @media (min-width: variables.$breackpoint) {
+                flex-direction: row;
+                gap: 3rem;
+                flex-wrap: wrap;
+                justify-content: center;
+
+            }
                 &__category{
 
                     @for $i from 1 through 3{
@@ -48,10 +55,14 @@
                     @include mixins.title-restaurant-menu;
                 
                 .menu-submenu{
+                    @media (min-width: variables.$breackpoint){}
                    background:#fff;
                     margin: 1rem 0 1rem 0;
                     display: flex;
                     border-radius: 1rem;
+                    
+                        
+                    
                     cursor: pointer;
                     @include mixins.chargement-menu;
                     animation: chargement-menu 1s;
@@ -133,9 +144,7 @@
                         }
                 }
 
-                @media (min-width: variables.$breackpoint) {
-                    flex-direction: row;
-        }
+           
     }
 }
 
