@@ -17,22 +17,42 @@
             grid-template-columns: 1fr 1fr;
         }
 
-       .new{
-            position: relative;
-        }
+       
 
-        .new::before{
-            content: 'Nouveau';
-            position: absolute;
-            height: 2.5rem;
-            width: 5rem;
-            background-color: colors.$tertiary;
-            color: darken(colors.$tertiary, 50%);
-            text-align: center;
-            display: grid;
-            place-items: center;
-            top: 1rem;
-            right: 1rem;
+        &_details{
+            i{
+                font-size: 1.8rem;
+                position: absolute;
+                left: 16rem;
+                top: 56rem;
+            }
+            .fa_solid{
+                color: transparent;
+                &:hover{
+                    @include mixins.linear-gradient;
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    cursor: pointer;
+                }
+            }
+            .new{
+                position: relative;
+            }
+    
+            .new::before{
+                content: 'Nouveau';
+                position: absolute;
+                height: 2.5rem;
+                width: 5rem;
+                background-color: colors.$tertiary;
+                color: darken(colors.$tertiary, 50%);
+                text-align: center;
+                display: grid;
+                place-items: center;
+                top: 1rem;
+                right: 1rem;
+            }
+
         }
     }
 
@@ -45,7 +65,6 @@
             background-size: cover;
             background-position: 35% 61%;
             height: 12rem;
-            margin-bottom: -4rem;
             @media (min-width: variables.$breackpoint) {
                height: 18rem;
             }
@@ -71,21 +90,7 @@
                    font-weight: 300;
                    padding-bottom: 1rem;
                 }
-                i{
-                    font-size: 1.8rem;
-                    position: absolute;
-                    right: 1rem;
-                    top: 1.5rem;
-                }
-                .fa_solid{
-                    color: transparent;
-                    &:hover{
-                        @include mixins.linear-gradient;
-                        background-clip: text;
-                        -webkit-background-clip: text;
-                        cursor: pointer;
-                    }
-                }
+                
                 
                 
             
