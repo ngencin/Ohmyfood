@@ -7,6 +7,7 @@
 @use "../sass/pages/menus.scss";
 @use "../sass/layout/footer.scss";
 @use "../sass/pages/restaurants.scss";
+@use "../sass/utilities/colors.scss";
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap');*,
 
@@ -25,4 +26,59 @@ a{
   text-decoration: none;
   color: inherit;
 }
+
+
+.loader  {
+background: white;
+height: 100%;
+width: 100%;
+position: fixed;
+inset: 0;
+z-index: 1;
+opacity: 0.9;
+animation: loader-page 1s 4s forwards;
+transform-origin: top;
+
+
+}
+.progress{
+  width: 50%;
+  border: 10px solid #f4a261;
+  border-radius: 15px;
+}
+
+.progress .color{
+  background-color: colors.$secondary ;
+  height: 10px;
+  border-radius: 15px;
+  animation: progres 4s infinite linear;    
+}
+@keyframes progres{
+  0%{
+    width: 0%;
+  }
+  25%{
+      width: 50%;
+  }
+  50%{
+      width: 75%;
+  }
+  75%{
+      width: 85%;
+  }
+  100%{
+      width: 100%;
+  }
+};
+
+@keyframes loader-page {
+  from { 
+    transform: scale(1);
+  }
+  to { 
+    transform: scale(0);
+  }
+  
+}
+
 
