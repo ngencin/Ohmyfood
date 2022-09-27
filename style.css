@@ -137,9 +137,9 @@ header .header_title {
 }
 .restaurants .cards_restaurants_details i {
   font-size: 1.8rem;
+  margin-top: -3.5rem;
   position: absolute;
   left: 16rem;
-  top: 56rem;
 }
 .restaurants .cards_restaurants_details .fa_solid {
   color: transparent;
