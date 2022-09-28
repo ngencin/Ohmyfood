@@ -8,6 +8,7 @@
         & h2{
             font-weight: 600;
             padding: 2rem 1rem;
+            font-size: 1.3rem;
         }
 
     .cards_restaurants{
@@ -31,6 +32,10 @@
                 place-items: center;
                 top: 1rem;
                 right: 1rem;
+            }
+            &:hover{
+                @include mixins.shadow;
+                border-radius: 1rem;
             }
         
             .restaurant_card{

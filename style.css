@@ -63,6 +63,7 @@ header .header_title {
 .method_menu h2 {
   font-weight: 600;
   padding: 2rem 1rem;
+  font-size: 1.3rem;
 }
 .method_menu ol {
   padding: 1rem;
@@ -127,6 +128,7 @@ header .header_title {
 .restaurants h2 {
   font-weight: 600;
   padding: 2rem 1rem;
+  font-size: 1.3rem;
 }
 .restaurants .cards_restaurants {
   display: grid;
@@ -152,6 +154,10 @@ header .header_title {
   place-items: center;
   top: 1rem;
   right: 1rem;
+}
+.restaurants .cards_restaurants .cards_restaurants_details:hover {
+  box-shadow: 0px 1px 3px grey;
+  border-radius: 1rem;
 }
 .restaurants .cards_restaurants .cards_restaurants_details .restaurant_card {
   cursor: pointer;
@@ -217,7 +223,7 @@ footer .description_footer {
 }
 footer .description_footer h3 {
   font-family: "Shrikhand", sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   padding: 1rem 0;
 }
 footer .description_footer p {
@@ -228,7 +234,7 @@ footer .description_footer i {
   padding-right: 0.3rem;
 }
 footer .description_footer a {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 .arrow {
