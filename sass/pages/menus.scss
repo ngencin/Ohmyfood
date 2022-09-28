@@ -52,7 +52,7 @@
                 }
                 @for $i from 1 through 4{
                     &__img-#{$i}{
-                        background-image: url(/assets/restaurants/menu_#{$i}.jpg);
+                        background-image: url(./assets/restaurants/menu_#{$i}.jpg);
                     }
                 }
                 &_description{
