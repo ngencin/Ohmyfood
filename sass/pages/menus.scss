@@ -13,13 +13,12 @@
     .cards_restaurants{
         display: grid;
         gap: 2rem;
-        @media (min-width: variables.$breackpoint) {
-            grid-template-columns: 1fr 1fr;
-        }
-
+            @media (min-width: variables.$breackpoint){
+                grid-template-columns: 1fr 1fr;
+            }
         .cards_restaurants_details{
             position: relative;
-
+        
             &.new::before{
                 content: 'Nouveau';
                 position: absolute;
@@ -37,54 +36,47 @@
             .restaurant_card{
                 cursor: pointer;
     
-                
-                
-            &__img{
-                border-radius: 2.5rem 2.5rem 0 0;
-                background-size: cover;
-                background-position: 35% 61%;
-                height: 12rem;
-                @media (min-width: variables.$breackpoint) {
-                   height: 18rem;
+                &__img{
+                    border-radius: 1rem 1rem 0 0;
+                    background-size: cover;
+                    background-position: 35% 63%;
+                    height: 10rem;
+                        @media (min-width: variables.$breackpoint) {
+                            height: 18rem;
+                        }
                 }
-            }
                 @for $i from 1 through 4{
                     &__img-#{$i}{
                         background-image: url(/assets/restaurants/menu_#{$i}.jpg);
-    
                     }
                 }
-            &_description{
-                position: relative;
-                background-color: #fff;
-                border-radius: 0 0 2.5rem 2.5rem;
-                    h3{
-                        padding-top: 1.6rem;
-                        margin-left: 1rem;
-                    }
-                    p{
-                       margin-left: 1rem;
-                       margin-top: 0.4rem;
-                       font-weight: 300;
-                       padding-bottom: 1rem;
-                    }
-                    i{
-                        font-size: 1.5rem;
-                        top: 1rem;
-                        position: absolute;
-                        right: 1rem;
-                        padding-top: 1rem;
-                          
-                    }
-                    .fa_solid{
-                        color: transparent;
-                        &:hover{
-                            @include mixins.linear-gradient;
-                            background-clip: text;
-                            -webkit-background-clip: text;
-                            cursor: pointer;
+                &_description{
+                    position: relative;
+                    background-color: #fff;
+                    border-radius: 0 0 1rem 1rem;
+                        h3{
+                            padding: 1rem 0 0 1rem;
                         }
-                    } 
+                        p{
+                            font-weight: 300;
+                            padding: 0.3rem 1rem 1rem;
+                            font-weight: 300;
+                        }
+                        i{
+                            font-size: 1.5rem;
+                            top: 1rem;
+                            position: absolute;
+                            right: 1rem;
+                        }
+                        .fa_solid{
+                            color: transparent;
+                                &:hover{
+                                    background-clip: text;
+                                    -webkit-background-clip: text;
+                                    cursor: pointer;
+                                        @include mixins.linear-gradient;
+                                }
+                        } 
                 }
             }   
         }

@@ -157,10 +157,10 @@ header .header_title {
   cursor: pointer;
 }
 .restaurants .cards_restaurants .cards_restaurants_details .restaurant_card__img {
-  border-radius: 2.5rem 2.5rem 0 0;
+  border-radius: 1rem 1rem 0 0;
   background-size: cover;
-  background-position: 35% 61%;
-  height: 12rem;
+  background-position: 35% 63%;
+  height: 10rem;
 }
 @media (min-width: 820px) {
   .restaurants .cards_restaurants .cards_restaurants_details .restaurant_card__img {
@@ -182,33 +182,30 @@ header .header_title {
 .restaurants .cards_restaurants .cards_restaurants_details .restaurant_card_description {
   position: relative;
   background-color: #fff;
-  border-radius: 0 0 2.5rem 2.5rem;
+  border-radius: 0 0 1rem 1rem;
 }
 .restaurants .cards_restaurants .cards_restaurants_details .restaurant_card_description h3 {
-  padding-top: 1.6rem;
-  margin-left: 1rem;
+  padding: 1rem 0 0 1rem;
 }
 .restaurants .cards_restaurants .cards_restaurants_details .restaurant_card_description p {
-  margin-left: 1rem;
-  margin-top: 0.4rem;
   font-weight: 300;
-  padding-bottom: 1rem;
+  padding: 0.3rem 1rem 1rem;
+  font-weight: 300;
 }
 .restaurants .cards_restaurants .cards_restaurants_details .restaurant_card_description i {
   font-size: 1.5rem;
   top: 1rem;
   position: absolute;
   right: 1rem;
-  padding-top: 1rem;
 }
 .restaurants .cards_restaurants .cards_restaurants_details .restaurant_card_description .fa_solid {
   color: transparent;
 }
 .restaurants .cards_restaurants .cards_restaurants_details .restaurant_card_description .fa_solid:hover {
-  background-image: linear-gradient(to right bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
   background-clip: text;
   -webkit-background-clip: text;
   cursor: pointer;
+  background-image: linear-gradient(to right bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
 }
 
 footer .description_footer {
@@ -263,10 +260,6 @@ footer .description_footer a {
   margin-top: -5rem;
   padding: 1rem;
 }
-.one-page h1 {
-  font-family: "Shrikhand", sans-serif;
-  font-size: 1.3rem;
-}
 .one-page .fa-heart {
   font-size: 1.6rem;
   position: absolute;
@@ -281,6 +274,10 @@ footer .description_footer a {
   background-clip: text;
   -webkit-background-clip: text;
   cursor: pointer;
+}
+.one-page h1 {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 1.3rem;
 }
 .one-page .menu {
   display: flex;
@@ -300,20 +297,6 @@ footer .description_footer a {
   position: relative;
   margin-top: 2rem;
 }
-@media (min-width: 820px) {
-  .one-page .menu__category {
-    width: 22rem;
-  }
-}
-.one-page .menu__category :nth-child(1) {
-  animation-delay: 100ms;
-}
-.one-page .menu__category :nth-child(2) {
-  animation-delay: 200ms;
-}
-.one-page .menu__category :nth-child(3) {
-  animation-delay: 300ms;
-}
 .one-page .menu__category h3 {
   text-transform: uppercase;
   font-family: "Roboto", sans-serif;
@@ -329,6 +312,20 @@ footer .description_footer a {
   background-color: #99E2D0;
   top: 1.4rem;
   left: 0;
+}
+@media (min-width: 820px) {
+  .one-page .menu__category {
+    width: 22rem;
+  }
+}
+.one-page .menu__category :nth-child(1) {
+  animation-delay: 100ms;
+}
+.one-page .menu__category :nth-child(2) {
+  animation-delay: 200ms;
+}
+.one-page .menu__category :nth-child(3) {
+  animation-delay: 300ms;
 }
 .one-page .menu__category .menu-submenu {
   background: #fff;
@@ -479,10 +476,10 @@ a {
 }
 
 .progress .color {
-  background-image: linear-gradient(to right bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
   height: 10px;
   border-radius: 15px;
   animation: progres 2s linear;
+  background-image: linear-gradient(to right bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
 }
 
 @keyframes progres {

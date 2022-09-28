@@ -29,93 +29,81 @@
     background: colors.$grey-menu;
     margin-top: -5rem;
     padding: 1rem;
-         h1{
-            font-family: "Shrikhand", sans-serif;  
-            font-size: 1.3rem;
-        }
         @include mixins.pages-restaurants;
-            
+            h1{
+                font-family: "Shrikhand", sans-serif;  
+                font-size: 1.3rem;
+            }
         .menu{
             display: flex;
             flex-direction: column;
             background: colors.$grey-menu;
-            @media (min-width: variables.$breackpoint) {
-                flex-direction: row;
-                gap: 3rem;
-                flex-wrap: wrap;
-                justify-content: center;
-
-            }
-                &__category{
-                    @media (min-width: variables.$breackpoint){
-                        width: 22rem;
-                    }
-
-                    @for $i from 1 through 3{
-                        :nth-child(#{$i}){
-                            animation-delay: 100ms * $i;
-                        }
-                    }
-                    background: colors.$grey-menu;
-                    position: relative;
-                    margin-top: 2rem;
+                @media (min-width: variables.$breackpoint){
+                    flex-direction: row;
+                    gap: 3rem;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+            &__category{
+                background: colors.$grey-menu;
+                position: relative;
+                margin-top: 2rem;
                     @include mixins.title-restaurant-menu;
-                
+                        @media (min-width: variables.$breackpoint){
+                            width: 22rem;
+                        }
+                @for $i from 1 through 3{
+                    :nth-child(#{$i}){
+                        animation-delay: 100ms * $i;
+                    }
+                }
                 .menu-submenu{
-                   
-                   background:#fff;
+                    background:#fff;
                     margin: 1rem 0 1rem 0;
                     display: flex;
                     border-radius: 1rem;
-                    
-                        
-                    
                     cursor: pointer;
-                    @include mixins.chargement-menu;
                     animation: chargement-menu 1s;
-                    @include mixins.mask-text;
+                        @include mixins.chargement-menu;
+                        @include mixins.mask-text;
                         @include mixins.shadow;
-                        &__description{
-                            display: flex;
-                            flex-direction: column;
-                            padding: 1rem;
-                            overflow: hidden;
-                            
+                    &__description{
+                        display: flex;
+                        flex-direction: column;
+                        padding: 1rem;
+                        overflow: hidden;
                         h4{
                             padding-top: 0.7rem;
                             font-size: 0.9rem;
-                            @include mixins.mask-text;
-
-                        }
+                                @include mixins.mask-text;
+                        }    
                         p{
                             font-weight: 300;
                             padding-top: 0.7rem;
                             font-size: 0.9rem;
-                            @include mixins.mask-text;
-                         }
+                                @include mixins.mask-text;
                         }
-                        &__check_price{
-                            display: flex;
-                            margin-left: auto; 
-                           
-                                    
-                        }
-                        &__price{
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: flex-end;
-                            padding: 0.7rem;
-                            font-weight: 500;
-                        }
-                        &__check{
-                            $button-check: 4rem;
-                            background: colors.$tertiary;
-                            border-radius: 0 1rem 1rem 0;
-                            margin-right: -$button-check;
-                            width: $button-check;
-                            display: grid;
-                            place-items: center;
-                                .menu-check{
+                    }
+                    &__check_price{
+                        display: flex;
+                        margin-left: auto; 
+                    }
+                    &__price{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-end;
+                        padding: 0.7rem;
+                        font-weight: 500;
+                    }
+                    &__check{
+                        $button-check: 4rem;
+                        background: colors.$tertiary;
+                        border-radius: 0 1rem 1rem 0;
+                        margin-right: -$button-check;
+                        width: $button-check;
+                        display: grid;
+                        place-items: center;
+                            .menu-check{
                                 display: grid;
                                 align-items: center;
                                 background: white;
@@ -124,34 +112,30 @@
                                 height: 2rem;
                                 text-align: center;
                                 color: colors.$tertiary;
-                               
                             }
-                               
-                        } 
-                        &:hover  {
-                            .menu-submenu__check{
-                                margin-right: 0;
+                    } 
+                    &:hover{
+                        .menu-submenu__check{
+                            margin-right: 0;
                             transition: all 0.7s ease;
-                            }
-                           i{
-                            @include mixins.rotate-check;
-                            animation: rotate-check 0.5s ease-in-out;
-                           } 
                         }
+                        i{
+                            animation: rotate-check 0.5s ease-in-out;
+                            @include mixins.rotate-check;
+                        } 
                     }
                 }
-                .button-command{
-                    margin: 1rem 0 2rem 0;
-                    text-align: center;
-                        &__commander{
-                            @include mixins.button-command;
-                                &:hover{
-                                    @include mixins.hover-opacity;
-                                }
+            }
+            .button-command{
+                margin: 1rem 0 2rem 0;
+                text-align: center;
+                    &__commander{
+                        @include mixins.button-command;
+                        &:hover{
+                            @include mixins.hover-opacity;
                         }
-                }
-
-           
-    }
+                    }
+            }
+        }
 }
 

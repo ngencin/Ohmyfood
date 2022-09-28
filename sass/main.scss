@@ -27,17 +27,16 @@ a{
   color: inherit;
 }
 
-
-.loader  {
-background: white;
-height: 100%;
-width: 100%;
-position: fixed;
-inset: 0;
-z-index: 1;
-opacity: 0.9;
-animation: loader-page 2s 2s forwards;
-transform-origin: center;
+.loader{
+  background: white;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  opacity: 0.9;
+  animation: loader-page 2s 2s forwards;
+  transform-origin: center;
     p{
       text-align: center;
       margin-top: 10rem;
@@ -45,6 +44,7 @@ transform-origin: center;
       color: colors.$tertiary;
     }
 }
+
 .progress{
   width: 10rem;
   border: 10px solid colors.$dark-grey;
@@ -53,18 +53,15 @@ transform-origin: center;
   animation: loader-page 2s 1.5s forwards;
   margin: auto;
   top: 15rem;
- 
 }
-
 
 .progress .color{
-  @include mixins.linear-gradient;
   height: 10px;
   border-radius: 15px;
-  animation: progres 2s linear;   
-
-
+  animation: progres 2s linear; 
+    @include mixins.linear-gradient;  
 }
+
 @keyframes progres{
   0%{
     width: 0%;
@@ -81,13 +78,13 @@ transform-origin: center;
   100%{
       width: 100%;
   }
-};
+}
 
-@keyframes loader-page {
+@keyframes loader-page{
   100% {
     opacity: 0;
     z-index: -10;
-}
+  }
 }
 
 

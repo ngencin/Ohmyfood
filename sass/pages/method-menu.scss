@@ -3,70 +3,64 @@
 @use "../utilities/colors.scss";
 
 
-
 .method_menu{
     counter-reset: number;
     margin-bottom: 2.5rem;
-
-    & h2{
-        font-weight: 600;
-        padding: 2rem 1rem;
-    }
-    & ol{
-        padding: 1rem;
-        display: flex;
-        gap: 2rem;
-            @media (max-width: 980px) {
-                flex-direction: column;
-            }
-    }
-    & li{
-        position: relative;
-        background-color: colors.$light-grey;
-        padding: 1.2rem;
-        flex-grow: 1;
-        border-radius: 1.3rem;
-        font-weight: 500;
-        margin-left: 1rem;
-        flex-direction: row;
-        display: flex;
-            p{
-                font-size: 0.8rem;
-                padding-left: 1rem;
-                align-items: center;
-                display: flex;
-            }
-
-            @include mixins.shadow;
-    &:hover{
-            background-color:rgba(245,237,255,255);
-
-            i.fas{
-                color: colors.$purple;
-            }   
+        & h2{
+            font-weight: 600;
+            padding: 2rem 1rem;
         }
-    & i.fas{
-        color: colors.$grey;
-        padding-left: 1rem;
-        font-size: 1rem;
-    }
-
-    &::before{
-        content:'' counter(number);
-        counter-increment: number;
-        background-color: colors.$purple;
-        width: variables.$size-method-menu * 1.4;
-        height: variables.$size-method-menu * 1.4;
-        display: flex;
-        border-radius: 50%;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        bottom: variables.$size-method-menu;
-        left: -0.8 * variables.$size-method-menu;
-        color: white;
-        font-size: 0.7rem;
-
-    }
-    }
+        & ol{
+            padding: 1rem;
+            display: flex;
+            gap: 2rem;
+                @media (max-width: 980px){
+                    flex-direction: column;
+                }
+        }
+        & li{
+            position: relative;
+            background-color: colors.$light-grey;
+            padding: 1.2rem;
+            flex-grow: 1;
+            border-radius: 1.3rem;
+            font-weight: 500;
+            margin-left: 1rem;
+            flex-direction: row;
+            display: flex;
+                @include mixins.shadow;
+                p{
+                    font-size: 0.8rem;
+                    padding-left: 1rem;
+                    align-items: center;
+                    display: flex;
+                }
+            &:hover{
+                background-color:rgba(245,237,255,255);
+                    i.fas{
+                        color: colors.$purple;
+                    }   
+            }
+            & i.fas{
+                color: colors.$grey;
+                padding-left: 1rem;
+                font-size: 1rem;
+            }
+            &::before{
+                content:'' counter(number);
+                counter-increment: number;
+                background-color: colors.$purple;
+                width: variables.$size-method-menu * 1.4;
+                height: variables.$size-method-menu * 1.4;
+                display: flex;
+                border-radius: 50%;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                bottom: variables.$size-method-menu;
+                left: -0.8 * variables.$size-method-menu;
+                color: white;
+                font-size: 0.7rem;
+            }
+        }
 }

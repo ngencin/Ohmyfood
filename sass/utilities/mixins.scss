@@ -1,21 +1,21 @@
 @use "../utilities/colors.scss";
 
 
-@mixin shadow { box-shadow: 0px 1px 3px grey;
+@mixin shadow{ 
+    box-shadow: 0px 1px 3px grey;
 }
 
-@mixin hover-opacity { opacity: 0.7;
-    
+@mixin hover-opacity{ 
+    opacity: 0.7;
 }
 
-@mixin linear-gradient { background-image: linear-gradient(to right bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
-    
+@mixin linear-gradient{ 
+    background-image: linear-gradient(to right bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
 }
 
 
-@mixin pages-restaurants {
-   
-    .fa-heart{
+@mixin pages-restaurants{
+   .fa-heart{
         font-size: 1.6rem;
         position: absolute;
         right: 1rem;
@@ -40,15 +40,15 @@
         font-weight: 300;
         position: relative;
         margin-bottom: 2.5rem;
-    &::after{
-        content: "";
-        position: absolute;
-        height: 0.25rem;
-        width: 2.5rem;
-        background-color: colors.$tertiary;
-        top: 1.4rem;
-        left: 0;
-    }
+        &::after{
+            content: "";
+            position: absolute;
+            height: 0.25rem;
+            width: 2.5rem;
+            background-color: colors.$tertiary;
+            top: 1.4rem;
+            left: 0;
+        }
     }
 }
 
@@ -60,29 +60,28 @@
         100%{
             transform: rotate(0);
         }
-        
     }
 }
 
 @mixin mask-text{
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 @mixin button-command{
-        padding: 0.5rem 1.5rem 0.5rem 1.5rem;
-        color: #fff;
-        font-size: 0.8rem;
-        border-radius: 2rem;
-        text-decoration: none;
-        font-weight: 400;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    color: #fff;
+    font-size: 0.8rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    font-weight: 400;
         @include shadow;
         @include linear-gradient;
 }
 
-@mixin chargement-menu {
-    @keyframes chargement-menu {
+@mixin chargement-menu{
+    @keyframes chargement-menu{
         from {
             transform: translateY(-50%);
             opacity: 0;
@@ -90,10 +89,7 @@
         to {
             transform: translateY(0);
             opacity: 1;
-         
         }
-        
     }
-    
 }
 

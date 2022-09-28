@@ -1,19 +1,16 @@
 @use "../utilities/colors.scss";
 
 footer{
-   
-        .description_footer{
-            background-color: colors.$dark-grey;
-            padding: 0.8rem;
-            color: #fff;
-            width: 100%;
-            display: inline-block;
-           
-
-            h3{
-            font-family: "Shrikhand", sans-serif;
-            font-size: 1.3rem;
-            padding: 1rem 0;
+   .description_footer{
+        background-color: colors.$dark-grey;
+        padding: 0.8rem;
+        color: #fff;
+        width: 100%;
+        display: inline-block;
+           h3{
+                font-family: "Shrikhand", sans-serif;
+                font-size: 1.3rem;
+                padding: 1rem 0;
             }  
             p{
                 padding: 0.3rem;
@@ -21,12 +18,9 @@ footer{
             }
             i{
                 padding-right: 0.3rem;
-
             }
             a{
                 font-size: 0.8rem;
             }
-        }
-
-        
+    }
 }
