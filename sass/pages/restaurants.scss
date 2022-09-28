@@ -16,6 +16,10 @@
 .img-banner img{
     width: 100%;
     object-fit: cover;
+    @media (min-width: variables.$breackpoint){
+        height: 30rem;
+        object-position: 50% 80%;
+    }
 }
 
 .one-page {
@@ -43,6 +47,9 @@
 
             }
                 &__category{
+                    @media (min-width: variables.$breackpoint){
+                        width: 22rem;
+                    }
 
                     @for $i from 1 through 3{
                         :nth-child(#{$i}){
@@ -55,7 +62,7 @@
                     @include mixins.title-restaurant-menu;
                 
                 .menu-submenu{
-                    @media (min-width: variables.$breackpoint){}
+                   
                    background:#fff;
                     margin: 1rem 0 1rem 0;
                     display: flex;

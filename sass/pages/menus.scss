@@ -2,13 +2,13 @@
 @use "../utilities/variables.scss";
 @use "../utilities/mixins.scss";
 
-    .restaurants{
-        background-color: colors.$light-grey;
-        padding: 0 0.8rem 4rem 0.8rem;
-            & h2{
-                font-weight: 600;
-                padding: 2rem 1rem;
-            }
+.restaurants{
+    background-color: colors.$light-grey;
+    padding: 0 0.8rem 4rem 0.8rem;
+        & h2{
+            font-weight: 600;
+            padding: 2rem 1rem;
+        }
 
     .cards_restaurants{
         display: grid;
@@ -17,86 +17,76 @@
             grid-template-columns: 1fr 1fr;
         }
 
-       
-
-           
-
-    }
-
-    .restaurant_card{
-        cursor: pointer;
-
-        .new{
+        .cards_restaurants_details{
             position: relative;
-        }
 
-        .new::before{
-            content: 'Nouveau';
-            position: absolute;
-            height: 2.5rem;
-            width: 5rem;
-            background-color: colors.$tertiary;
-            color: darken(colors.$tertiary, 50%);
-            text-align: center;
-            display: grid;
-            place-items: center;
-            top: 1rem;
-            right: 1rem;
-        }
-
-        &__img{
-            border-radius: 2.5rem 2.5rem 0 0;
-            background-size: cover;
-            background-position: 35% 61%;
-            height: 12rem;
-            @media (min-width: variables.$breackpoint) {
-               height: 18rem;
+            &.new::before{
+                content: 'Nouveau';
+                position: absolute;
+                height: 2.5rem;
+                width: 5rem;
+                background-color: colors.$tertiary;
+                color: darken(colors.$tertiary, 50%);
+                text-align: center;
+                display: grid;
+                place-items: center;
+                top: 1rem;
+                right: 1rem;
             }
-            
-        }
-            @for $i from 1 through 4{
-                &__img-#{$i}{
-                    background-image: url(/assets/restaurants/menu_#{$i}.jpg);
-
-                }
-            }
-        &_description{
-            position: relative;
-            background-color: #fff;
-            border-radius: 0 0 2.5rem 2.5rem;
-                h3{
-                    padding-top: 1.6rem;
-                    margin-left: 1rem;
-                }
-                p{
-                   margin-left: 1rem;
-                   margin-top: 0.4rem;
-                   font-weight: 300;
-                   padding-bottom: 1rem;
-                }
-                i{
-                    font-size: 1.5rem;
-                    top: 1rem;
-                    position: absolute;
-                    right: 1rem;
-                    padding-top: 1rem;
-                      
-                }
-                .fa_solid{
-                    color: transparent;
-                    &:hover{
-                        @include mixins.linear-gradient;
-                        background-clip: text;
-                        -webkit-background-clip: text;
-                        cursor: pointer;
-                    }
-                } 
-                
-                
-            
-        }
-
-       
-    }
+        
+            .restaurant_card{
+                cursor: pointer;
     
+                
+                
+            &__img{
+                border-radius: 2.5rem 2.5rem 0 0;
+                background-size: cover;
+                background-position: 35% 61%;
+                height: 12rem;
+                @media (min-width: variables.$breackpoint) {
+                   height: 18rem;
+                }
+            }
+                @for $i from 1 through 4{
+                    &__img-#{$i}{
+                        background-image: url(/assets/restaurants/menu_#{$i}.jpg);
+    
+                    }
+                }
+            &_description{
+                position: relative;
+                background-color: #fff;
+                border-radius: 0 0 2.5rem 2.5rem;
+                    h3{
+                        padding-top: 1.6rem;
+                        margin-left: 1rem;
+                    }
+                    p{
+                       margin-left: 1rem;
+                       margin-top: 0.4rem;
+                       font-weight: 300;
+                       padding-bottom: 1rem;
+                    }
+                    i{
+                        font-size: 1.5rem;
+                        top: 1rem;
+                        position: absolute;
+                        right: 1rem;
+                        padding-top: 1rem;
+                          
+                    }
+                    .fa_solid{
+                        color: transparent;
+                        &:hover{
+                            @include mixins.linear-gradient;
+                            background-clip: text;
+                            -webkit-background-clip: text;
+                            cursor: pointer;
+                        }
+                    } 
+                }
+            }   
+        }
+    }
 }   
