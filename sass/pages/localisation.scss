@@ -7,10 +7,23 @@
     align-items: center;
     gap: 0.7rem;
     padding: 0.7rem;
-    font-size: 0.7rem;
     color: colors.$grey;
       & i{
         font-size: 0.7rem;
         color: colors.$dark-grey;
+        text-align: center;
+      }
+      input{
+        border: none;
+        background: none;
+        width: 6.5rem;
+          &:focus{
+            outline: none;
+          }
+          &::placeholder{
+            font-size: 0.8rem;
+            color: colors.$dark-grey;
+            text-align: center;
+          }
       }
 }

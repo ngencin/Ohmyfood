@@ -17,12 +17,25 @@ header .header_title {
   align-items: center;
   gap: 0.7rem;
   padding: 0.7rem;
-  font-size: 0.7rem;
   color: rgb(126, 126, 126);
 }
 .localisation i {
   font-size: 0.7rem;
   color: rgb(53, 53, 53);
+  text-align: center;
+}
+.localisation input {
+  border: none;
+  background: none;
+  width: 6.5rem;
+}
+.localisation input:focus {
+  outline: none;
+}
+.localisation input::placeholder {
+  font-size: 0.8rem;
+  color: rgb(53, 53, 53);
+  text-align: center;
 }
 
 .explorer {
@@ -174,16 +187,16 @@ header .header_title {
   }
 }
 .restaurants .cards_restaurants .cards_restaurants_details .restaurant_card__img-1 {
-  background-image: url(/assets/restaurants/menu_1.jpg);
+  background-image: url(./assets/restaurants/menu-1.jpg);
 }
 .restaurants .cards_restaurants .cards_restaurants_details .restaurant_card__img-2 {
-  background-image: url(/assets/restaurants/menu_2.jpg);
+  background-image: url(./assets/restaurants/menu-2.jpg);
 }
 .restaurants .cards_restaurants .cards_restaurants_details .restaurant_card__img-3 {
-  background-image: url(/assets/restaurants/menu_3.jpg);
+  background-image: url(./assets/restaurants/menu-3.jpg);
 }
 .restaurants .cards_restaurants .cards_restaurants_details .restaurant_card__img-4 {
-  background-image: url(/assets/restaurants/menu_4.jpg);
+  background-image: url(./assets/restaurants/menu-4.jpg);
 }
 .restaurants .cards_restaurants .cards_restaurants_details .restaurant_card_description {
   position: relative;
