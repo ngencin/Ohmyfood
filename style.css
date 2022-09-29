@@ -155,6 +155,21 @@ header .header_title {
 .restaurants .cards_restaurants .cards_restaurants_details {
   position: relative;
 }
+.restaurants .cards_restaurants .cards_restaurants_details i {
+  font-size: 1.5rem;
+  bottom: 1rem;
+  position: absolute;
+  right: 1rem;
+}
+.restaurants .cards_restaurants .cards_restaurants_details .fa_solid {
+  color: transparent;
+}
+.restaurants .cards_restaurants .cards_restaurants_details .fa_solid:hover {
+  background-clip: text;
+  -webkit-background-clip: text;
+  cursor: pointer;
+  background-image: linear-gradient(to right bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
+}
 .restaurants .cards_restaurants .cards_restaurants_details.new::before {
   content: "Nouveau";
   position: absolute;
@@ -210,21 +225,6 @@ header .header_title {
   font-weight: 300;
   padding: 0.3rem 1rem 1rem;
   font-weight: 300;
-}
-.restaurants .cards_restaurants .cards_restaurants_details .restaurant_card_description i {
-  font-size: 1.5rem;
-  top: 1rem;
-  position: absolute;
-  right: 1rem;
-}
-.restaurants .cards_restaurants .cards_restaurants_details .restaurant_card_description .fa_solid {
-  color: transparent;
-}
-.restaurants .cards_restaurants .cards_restaurants_details .restaurant_card_description .fa_solid:hover {
-  background-clip: text;
-  -webkit-background-clip: text;
-  cursor: pointer;
-  background-image: linear-gradient(to right bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
 }
 
 footer .description_footer {

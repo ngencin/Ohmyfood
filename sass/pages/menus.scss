@@ -17,9 +17,26 @@
             @media (min-width: variables.$breackpoint){
                 grid-template-columns: 1fr 1fr;
             }
+            
         .cards_restaurants_details{
             position: relative;
-        
+
+            i{
+                font-size: 1.5rem;
+                bottom: 1rem;
+                position: absolute;
+                right: 1rem;
+            }
+            .fa_solid{
+                color: transparent;
+                    &:hover{
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        cursor: pointer;
+                            @include mixins.linear-gradient;
+                    } 
+            } 
+
             &.new::before{
                 content: 'Nouveau';
                 position: absolute;
@@ -70,21 +87,7 @@
                             font-weight: 300;
                         }
                         
-                        i{
-                            font-size: 1.5rem;
-                            top: 1rem;
-                            position: absolute;
-                            right: 1rem;
-                        }
-                        .fa_solid{
-                            color: transparent;
-                                &:hover{
-                                    background-clip: text;
-                                    -webkit-background-clip: text;
-                                    cursor: pointer;
-                                        @include mixins.linear-gradient;
-                                }
-                        } 
+                       
                 }
             }   
         }
