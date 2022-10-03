@@ -263,6 +263,7 @@ footer .description_footer a {
 .img-banner img {
   width: 100%;
   object-fit: cover;
+  height: 17rem;
 }
 @media (min-width: 820px) {
   .img-banner img {
@@ -352,7 +353,7 @@ footer .description_footer a {
   display: flex;
   border-radius: 1rem;
   cursor: pointer;
-  animation: chargement-menu 1s;
+  animation: chargement-menu 3s;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
