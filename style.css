@@ -229,10 +229,11 @@ header .header_title {
 
 footer .description_footer {
   background-color: rgb(53, 53, 53);
-  padding: 0.8rem;
+  padding: 0.8rem 0 2rem 1rem;
   color: #fff;
   width: 100%;
   display: inline-block;
+  font-weight: 300;
 }
 footer .description_footer h3 {
   font-family: "Shrikhand", sans-serif;
@@ -240,7 +241,7 @@ footer .description_footer h3 {
   padding: 1rem 0;
 }
 footer .description_footer p {
-  padding: 0.3rem;
+  padding-bottom: 0.5rem;
   font-size: 0.9rem;
 }
 footer .description_footer i {
