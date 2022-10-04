@@ -39,6 +39,7 @@
             display: flex;
             flex-direction: column;
             background: colors.$grey-menu;
+            
                 @media (min-width: variables.$breackpoint){
                     flex-direction: row;
                     gap: 3rem;
@@ -127,16 +128,18 @@
                     }
                 }
             }
-            .button-command{
-                margin: 1rem 0 2rem 0;
-                text-align: center;
-                    &__commander{
-                        @include mixins.button-command;
-                        &:hover{
-                            @include mixins.hover-opacity;
-                        }
+           
+        }
+        .button-command{
+            margin: 1rem 0 1rem 0;
+            text-align: center;
+                &__commander{
+                    @include mixins.button-command;
+                    &:hover{
+                        @include mixins.hover-opacity;
                     }
-            }
+                }
+               
         }
 }
 
