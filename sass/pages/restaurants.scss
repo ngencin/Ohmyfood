@@ -42,8 +42,8 @@
             
                 @media (min-width: variables.$breackpoint){
                     flex-direction: row;
-                    gap: 3rem;
-                    flex-wrap: wrap;
+                    gap: 1.5rem;
+                    flex-grow: 1;
                     justify-content: center;
                 }
             &__category{

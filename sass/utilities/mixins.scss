@@ -7,9 +7,14 @@
 
 @mixin hover-opacity{ 
     opacity: 0.8;
-    box-shadow: 0rem 0.1rem 0.2rem colors.$dark-grey;
+    @include box-shadow;
+    
 }
 
+@mixin box-shadow{
+    box-shadow: 0.2rem 0.2rem 0.2rem colors.$dark-grey-opacity;
+    
+}
 
 
 @mixin linear-gradient{ 

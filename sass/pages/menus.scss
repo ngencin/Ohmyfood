@@ -22,6 +22,10 @@
             position: relative;
             @include mixins.shadow;
                 border-radius: 1rem;
+                &:hover{
+                    @include mixins.box-shadow;
+                    border-radius: 1rem;
+                }
 
             i{
                 font-size: 1.5rem;
