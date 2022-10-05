@@ -352,8 +352,9 @@ footer .description_footer a {
   margin: 1rem 0 1rem 0;
   display: flex;
   border-radius: 1rem;
-  animation: chargement-menu 3s;
+  height: 4rem;
   cursor: pointer;
+  animation: chargement-menu 3s;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -372,7 +373,7 @@ footer .description_footer a {
 .one-page .menu__category .menu-submenu__description {
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  padding: 0 0 0.7rem 0.7rem;
   overflow: hidden;
 }
 .one-page .menu__category .menu-submenu__description h4 {
@@ -384,7 +385,7 @@ footer .description_footer a {
 }
 .one-page .menu__category .menu-submenu__description p {
   font-weight: 300;
-  padding-top: 0.7rem;
+  padding: 0.7rem 0 0.1rem;
   font-size: 0.9rem;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -400,6 +401,7 @@ footer .description_footer a {
   justify-content: flex-end;
   padding: 0.7rem;
   font-weight: 500;
+  margin-top: 1.5rem;
 }
 .one-page .menu__category .menu-submenu__check {
   background: #99E2D0;
