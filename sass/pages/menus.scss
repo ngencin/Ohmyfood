@@ -20,6 +20,8 @@
             
         .cards_restaurants_details{
             position: relative;
+            @include mixins.shadow;
+                border-radius: 1rem;
 
             i{
                 font-size: 1.5rem;
@@ -50,10 +52,7 @@
                 top: 1rem;
                 right: 1rem;
             }
-            &:hover{
-                @include mixins.shadow;
-                border-radius: 1rem;
-            }
+           
         
             .restaurant_card{
                 cursor: pointer;

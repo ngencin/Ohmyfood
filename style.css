@@ -60,13 +60,14 @@ header .header_title {
   border-radius: 2rem;
   text-decoration: none;
   font-weight: 400;
-  box-shadow: 0px 1px 3px grey;
+  box-shadow: 0px 1px 3px rgb(126, 126, 126);
   background-image: linear-gradient(to right bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
-  box-shadow: 0px 1px 3px grey;
+  box-shadow: 0px 1px 3px rgb(126, 126, 126);
   background-image: linear-gradient(to right bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
 }
 .explorer a:hover {
-  opacity: 0.7;
+  opacity: 0.8;
+  box-shadow: 0rem 0.1rem 0.2rem rgb(53, 53, 53);
 }
 
 .method_menu {
@@ -98,7 +99,7 @@ header .header_title {
   margin-left: 1rem;
   flex-direction: row;
   display: flex;
-  box-shadow: 0px 1px 3px grey;
+  box-shadow: 0px 1px 3px rgb(126, 126, 126);
 }
 .method_menu li p {
   font-size: 0.8rem;
@@ -154,6 +155,8 @@ header .header_title {
 }
 .restaurants .cards_restaurants .cards_restaurants_details {
   position: relative;
+  box-shadow: 0px 1px 3px rgb(126, 126, 126);
+  border-radius: 1rem;
 }
 .restaurants .cards_restaurants .cards_restaurants_details i {
   font-size: 1.5rem;
@@ -182,10 +185,6 @@ header .header_title {
   place-items: center;
   top: 1rem;
   right: 1rem;
-}
-.restaurants .cards_restaurants .cards_restaurants_details:hover {
-  box-shadow: 0px 1px 3px grey;
-  border-radius: 1rem;
 }
 .restaurants .cards_restaurants .cards_restaurants_details .restaurant_card {
   cursor: pointer;
@@ -358,7 +357,7 @@ footer .description_footer a {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  box-shadow: 0px 1px 3px grey;
+  box-shadow: 0px 1px 3px rgb(126, 126, 126);
 }
 @keyframes chargement-menu {
   from {
@@ -446,11 +445,12 @@ footer .description_footer a {
   border-radius: 2rem;
   text-decoration: none;
   font-weight: 400;
-  box-shadow: 0px 1px 3px grey;
+  box-shadow: 0px 1px 3px rgb(126, 126, 126);
   background-image: linear-gradient(to right bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
 }
 .one-page .button-command__commander:hover {
-  opacity: 0.7;
+  opacity: 0.8;
+  box-shadow: 0rem 0.1rem 0.2rem rgb(53, 53, 53);
 }
 
 *,
