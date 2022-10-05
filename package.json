@@ -9,22 +9,5 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ngencin/Ohmyfood.git"
-  },
-<<<<<<< HEAD
-  "author": "Niademe Gencin",
-=======
-  "author": "Niademe",
->>>>>>> 2414587345e6dc25be4cecfca73499ba91233052
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ngencin/Ohmyfood/issues"
-  },
-<<<<<<< HEAD
-  "homepage": "https://github.com/ngencin/Ohmyfood#readme"
-=======
-  "homepage": "https://github.com/ngencin/Ohmyfood#readme",
-  "dependencies": {
-    "sass": "^1.54.9"
   }
->>>>>>> 2414587345e6dc25be4cecfca73499ba91233052
 }
