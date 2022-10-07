@@ -29,21 +29,21 @@
     border-radius: 1.5rem 1.5rem 0 0;
     background: colors.$grey-menu;
     margin-top: -5rem;
-    padding: 1rem;
+    padding: 0.7rem;
         @include mixins.pages-restaurants;
             h1{
                 font-family: "Shrikhand", sans-serif;  
                 font-size: 1.3rem;
+                padding-top: 1rem;
             }
         .menu{
             display: flex;
             flex-direction: column;
             background: colors.$grey-menu;
-            
                 @media (min-width: variables.$breackpoint){
                     flex-direction: row;
                     gap: 1.5rem;
-                    flex-grow: 1;
+                    flex-wrap: wrap;
                     justify-content: center;
                 }
             &__category{
@@ -52,13 +52,18 @@
                 margin-top: 2rem;
                     @include mixins.title-restaurant-menu;
                         @media (min-width: variables.$breackpoint){
-                            width: 22rem;
+                            width: 2rem;
+                            flex: 1;
+                            display: flex;
+                            flex-direction: column;
                         }
                 @for $i from 1 through 3{
                     :nth-child(#{$i}){
                         animation-delay: 100ms * $i;
                     }
                 }
+                @include mixins.animation;
+
                 .menu-submenu{
                     background:#fff;
                     margin: 1rem 0 1rem 0;
@@ -66,8 +71,6 @@
                     border-radius: 1rem;
                     height: 4rem;
                     cursor: pointer; 
-                    animation: chargement-menu 3s;
-                        @include mixins.chargement-menu;
                         @include mixins.mask-text;
                         @include mixins.shadow;
                     &__description{
@@ -133,7 +136,7 @@
            
         }
         .button-command{
-            margin: 1rem 0 1rem 0;
+            margin: 1.5rem 0 3rem 0;
             text-align: center;
                 &__commander{
                     @include mixins.button-command;

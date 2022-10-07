@@ -1,4 +1,5 @@
 @use "../utilities/colors.scss";
+@use "../utilities/variables.scss";
 
 
 @mixin shadow{ 
@@ -26,9 +27,9 @@
    .fa-heart{
         font-size: 1.6rem;
         position: absolute;
-        right: 1rem;
-        top: 1rem;              
-        
+        right: 2.3rem;
+        top: 1.7rem;
+        font-size: 1.3rem;  
     }
     .fa_solid{
         color: transparent;
@@ -78,7 +79,7 @@
 }
 
 @mixin button-command{
-    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    padding: 0.7rem 2rem 0.7rem 2rem;
     color: #fff;
     font-size: 0.8rem;
     border-radius: 2rem;
@@ -89,15 +90,32 @@
 }
 
 @mixin chargement-menu{
-    @keyframes chargement-menu{
-        from {
-            transform: translateY(-50%);
-            opacity: 0;
+    @keyframes loader-menu{
+        0%{
+            transform:scale(.5)
         }
-        to {
-            transform: translateY(0);
-            opacity: 1;
+        100%{
+            transform:scale(1)
         }
     }
 }
+
+@mixin animation{
+    &.animation_1{
+        animation: loader-menu .4s steps(1,end) both;
+    }
+        @include chargement-menu;
+                    
+    &.animation_2{
+        animation: loader-menu .7s steps(1,end) both;
+    }
+        @include chargement-menu;
+    
+    &.animation_3{
+        animation: loader-menu .9s steps(1,end) both;
+    }
+        @include chargement-menu;
+    
+}
+
 

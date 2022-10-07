@@ -4,7 +4,7 @@
 .explorer {
     background-color: colors.$light-grey;
     text-align: center;
-    padding: 0 2.5rem 1.8rem 2.5rem;
+    padding: 0 2.5rem 2.5rem 2.5rem;
       & h2{
       padding: 1rem 0 1rem 0;
       font-weight: 700;
@@ -12,13 +12,17 @@
       }
       & p{
         font-size: 0.7rem;
-        padding-bottom: 1rem;
+        padding-bottom: 1.3rem;
         font-weight: 300;
       }
       & a{
-          @include mixins.button-command;
-          @include mixins.shadow;
-          @include mixins.linear-gradient;
+          padding: 0.5rem 0.7rem 0.5rem 0.7rem;color: #fff;
+          font-size: 0.6rem;
+          border-radius: 2rem;
+          text-decoration: none;
+          font-weight: 400;
+            @include mixins.shadow;
+            @include mixins.linear-gradient;
       }
       & a:hover{
         @include mixins.hover-opacity;

@@ -21,7 +21,7 @@ header .header_title {
 }
 .localisation i {
   font-size: 0.7rem;
-  color: rgb(53, 53, 53);
+  color: rgb(84, 84, 84);
   text-align: center;
 }
 .localisation input {
@@ -34,14 +34,14 @@ header .header_title {
 }
 .localisation input::placeholder {
   font-size: 0.8rem;
-  color: rgb(53, 53, 53);
+  color: rgb(84, 84, 84);
   text-align: center;
 }
 
 .explorer {
   background-color: rgb(246, 246, 246);
   text-align: center;
-  padding: 0 2.5rem 1.8rem 2.5rem;
+  padding: 0 2.5rem 2.5rem 2.5rem;
 }
 .explorer h2 {
   padding: 1rem 0 1rem 0;
@@ -50,18 +50,16 @@ header .header_title {
 }
 .explorer p {
   font-size: 0.7rem;
-  padding-bottom: 1rem;
+  padding-bottom: 1.3rem;
   font-weight: 300;
 }
 .explorer a {
-  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  padding: 0.5rem 0.7rem 0.5rem 0.7rem;
   color: #fff;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   border-radius: 2rem;
   text-decoration: none;
   font-weight: 400;
-  box-shadow: 0px 1px 3px rgb(126, 126, 126);
-  background-image: linear-gradient(to right bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
   box-shadow: 0px 1px 3px rgb(126, 126, 126);
   background-image: linear-gradient(to right bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
 }
@@ -76,11 +74,11 @@ header .header_title {
 }
 .method_menu h2 {
   font-weight: 600;
-  padding: 2rem 1rem;
+  padding: 2.5rem 0 1.5rem 1rem;
   font-size: 1.3rem;
 }
 .method_menu ol {
-  padding: 1rem;
+  padding: 0 1rem 0 0.7rem;
   display: flex;
   gap: 2rem;
 }
@@ -103,7 +101,7 @@ header .header_title {
 }
 .method_menu li p {
   font-size: 0.8rem;
-  padding-left: 1rem;
+  padding-left: 1.3rem;
   align-items: center;
   display: flex;
 }
@@ -115,7 +113,7 @@ header .header_title {
 }
 .method_menu li i.fas {
   color: rgb(126, 126, 126);
-  padding-left: 1rem;
+  padding-left: 0.5rem;
   font-size: 1rem;
 }
 .method_menu li::before {
@@ -137,18 +135,18 @@ header .header_title {
 
 .restaurants {
   background-color: rgb(246, 246, 246);
-  padding: 0 0.8rem 4rem 0.8rem;
 }
 .restaurants h2 {
   font-weight: 600;
-  padding: 2rem 1rem;
+  padding: 2.5rem 0 1.5rem 1rem;
   font-size: 1.3rem;
 }
 .restaurants .cards_restaurants {
   display: grid;
   gap: 2rem;
+  padding: 0 1rem 3rem 1rem;
 }
-@media (min-width: 820px) {
+@media (min-width: 769px) {
   .restaurants .cards_restaurants {
     grid-template-columns: 1fr 1fr;
   }
@@ -164,9 +162,9 @@ header .header_title {
 }
 .restaurants .cards_restaurants .cards_restaurants_details i {
   font-size: 1.5rem;
-  bottom: 1rem;
+  bottom: 1.7rem;
   position: absolute;
-  right: 1rem;
+  right: 1.5rem;
 }
 .restaurants .cards_restaurants .cards_restaurants_details .fa_solid {
   color: transparent;
@@ -196,10 +194,10 @@ header .header_title {
 .restaurants .cards_restaurants .cards_restaurants_details .restaurant_card__img {
   border-radius: 1rem 1rem 0 0;
   background-size: cover;
-  background-position: 35% 63%;
-  height: 10rem;
+  background-position: 35% 62%;
+  height: 9rem;
 }
-@media (min-width: 820px) {
+@media (min-width: 769px) {
   .restaurants .cards_restaurants .cards_restaurants_details .restaurant_card__img {
     height: 18rem;
   }
@@ -232,7 +230,7 @@ header .header_title {
 
 footer .description_footer {
   background-color: rgb(53, 53, 53);
-  padding: 0.8rem 0 2rem 1rem;
+  padding: 0.5rem 0 2rem 1.2rem;
   color: #fff;
   width: 100%;
   display: inline-block;
@@ -241,7 +239,7 @@ footer .description_footer {
 footer .description_footer h3 {
   font-family: "Shrikhand", sans-serif;
   font-size: 1.1rem;
-  padding: 1rem 0;
+  padding: 1rem 0 1.2rem 0;
 }
 footer .description_footer p {
   padding-bottom: 0.5rem;
@@ -249,6 +247,7 @@ footer .description_footer p {
 }
 footer .description_footer i {
   padding-right: 0.3rem;
+  font-size: 0.8rem;
 }
 footer .description_footer a {
   font-size: 0.9rem;
@@ -269,7 +268,7 @@ footer .description_footer a {
   object-fit: cover;
   height: 17rem;
 }
-@media (min-width: 820px) {
+@media (min-width: 769px) {
   .img-banner img {
     height: 30rem;
     object-position: 50% 80%;
@@ -282,13 +281,14 @@ footer .description_footer a {
   border-radius: 1.5rem 1.5rem 0 0;
   background: rgb(246, 246, 246);
   margin-top: -5rem;
-  padding: 1rem;
+  padding: 0.7rem;
 }
 .one-page .fa-heart {
   font-size: 1.6rem;
   position: absolute;
-  right: 1rem;
-  top: 1rem;
+  right: 2.3rem;
+  top: 1.7rem;
+  font-size: 1.3rem;
 }
 .one-page .fa_solid {
   color: transparent;
@@ -302,17 +302,18 @@ footer .description_footer a {
 .one-page h1 {
   font-family: "Shrikhand", sans-serif;
   font-size: 1.3rem;
+  padding-top: 1rem;
 }
 .one-page .menu {
   display: flex;
   flex-direction: column;
   background: rgb(246, 246, 246);
 }
-@media (min-width: 820px) {
+@media (min-width: 769px) {
   .one-page .menu {
     flex-direction: row;
     gap: 1.5rem;
-    flex-grow: 1;
+    flex-wrap: wrap;
     justify-content: center;
   }
 }
@@ -337,9 +338,12 @@ footer .description_footer a {
   top: 1.4rem;
   left: 0;
 }
-@media (min-width: 820px) {
+@media (min-width: 769px) {
   .one-page .menu__category {
-    width: 22rem;
+    width: 2rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
   }
 }
 .one-page .menu__category :nth-child(1) {
@@ -351,6 +355,39 @@ footer .description_footer a {
 .one-page .menu__category :nth-child(3) {
   animation-delay: 300ms;
 }
+.one-page .menu__category.animation_1 {
+  animation: loader-menu 0.4s steps(1, end) both;
+}
+@keyframes loader-menu {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.one-page .menu__category.animation_2 {
+  animation: loader-menu 0.7s steps(1, end) both;
+}
+@keyframes loader-menu {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.one-page .menu__category.animation_3 {
+  animation: loader-menu 0.9s steps(1, end) both;
+}
+@keyframes loader-menu {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .one-page .menu__category .menu-submenu {
   background: #fff;
   margin: 1rem 0 1rem 0;
@@ -358,21 +395,10 @@ footer .description_footer a {
   border-radius: 1rem;
   height: 4rem;
   cursor: pointer;
-  animation: chargement-menu 3s;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   box-shadow: 0px 1px 3px rgb(126, 126, 126);
-}
-@keyframes chargement-menu {
-  from {
-    transform: translateY(-50%);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
 }
 .one-page .menu__category .menu-submenu__description {
   display: flex;
@@ -441,11 +467,11 @@ footer .description_footer a {
   }
 }
 .one-page .button-command {
-  margin: 1rem 0 1rem 0;
+  margin: 1.5rem 0 3rem 0;
   text-align: center;
 }
 .one-page .button-command__commander {
-  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  padding: 0.7rem 2rem 0.7rem 2rem;
   color: #fff;
   font-size: 0.8rem;
   border-radius: 2rem;

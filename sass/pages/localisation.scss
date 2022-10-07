@@ -10,7 +10,7 @@
     color: colors.$grey;
       & i{
         font-size: 0.7rem;
-        color: colors.$dark-grey;
+        color: colors.$localisation;
         text-align: center;
       }
       input{
@@ -22,7 +22,7 @@
           }
           &::placeholder{
             font-size: 0.8rem;
-            color: colors.$dark-grey;
+            color: colors.$localisation;
             text-align: center;
           }
       }
