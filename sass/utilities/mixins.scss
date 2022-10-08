@@ -90,29 +90,31 @@
 }
 
 @mixin chargement-menu{
-    @keyframes loader-menu{
+    @keyframes scale-in-center{
         0%{
-            transform:scale(.5)
+            transform:scale(0);
+            opacity:1
         }
         100%{
-            transform:scale(1)
+            transform:scale(1);
+            opacity:1;
         }
     }
 }
 
 @mixin animation{
     &.animation_1{
-        animation: loader-menu .4s steps(1,end) both;
+        animation:scale-in-center .5s cubic-bezier(.25,.46,.45,.94) .5s backwards;
     }
         @include chargement-menu;
                     
     &.animation_2{
-        animation: loader-menu .7s steps(1,end) both;
+        animation:scale-in-center .9s cubic-bezier(.25,.46,.45,.94) 1s backwards;
     }
         @include chargement-menu;
     
     &.animation_3{
-        animation: loader-menu .9s steps(1,end) both;
+        animation:scale-in-center 1.5s cubic-bezier(.25,.46,.45,.94) 1.5s backwards;
     }
         @include chargement-menu;
     
